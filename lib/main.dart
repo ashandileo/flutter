@@ -10,7 +10,26 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: Text("App Bar")),
-        body: Center(child: Text("Hello World HEHE!")),
+        body: Center(
+            child: Container(
+                color: Colors.lightBlue,
+                width: 150,
+                // height: 50,
+                child: Text(
+                  "Saya sedang belajar flutter seru dan asyik sekali ternyata hohoho",
+                  // maxLines: 2,
+                  // overflow: TextOverflow.clip,
+                  // softWrap: false,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18
+                  ),
+                )
+            )
+        ),
       ),
     );
   }
